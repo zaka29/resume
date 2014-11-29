@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +12,8 @@
     <!-- Bootstrap core CSS -->
     <link href="{{site.url}}/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
     <link href="{{site.url}}/css/style.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -51,9 +44,9 @@
         </div>
         <div class="navbar-collapse collapse" style="height: 1px;">
           <ul id="navbar-example" class="nav navbar-nav">
-            <li class="active"><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li class="active"><a href="#Employment">Employment</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Refferences">Refferences</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -61,45 +54,29 @@
 
     <div class="container">
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-7 col-md-8">
+      <div class="row row-content">
+        <div class="col-sm-9 col-md-9 col-content">
           {{ content }}
         </div>
-        <div class="col-xs-6 col-sm-5 col-md-4">
-          <ul id="nav_spy" class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
+        <div class="col-sm-3 col-md-3 col-nav">
+          <div class="row">
+            <ul id="nav_spy" class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#Employment">Employment</a></li>
+              <li><a href="#Education">Education</a></li>
+              <li><a href="#Refferences">Refferences</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div><!-- /.container -->
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{site.url}}/js/jquery-1.10.2.min.js"></script>
     <script src="{{site.url}}/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        console.log("test");
-        $('body').scrollspy();
-
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-
-
-    </script>
+    <script src="{{site.url}}/js/main.js"></script>
+    
+    
 
 </body></html>
